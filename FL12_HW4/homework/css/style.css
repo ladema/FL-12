@@ -1,0 +1,146 @@
+body{
+    margin: 0 auto;
+    min-width: 900px;
+    padding: 0;
+}
+.header-wrap{
+    height: 20px;
+}
+.header-nav{
+    background-color: #ffffff;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;   
+}
+a{
+    text-decoration: none;
+}
+.header-p{
+    margin-left:170px ;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px; 
+}
+nav{
+    margin-top: 13px;
+    margin-left: 450px;
+}
+li{
+    margin-right:30px ;
+    display: inline;   
+}
+.nav-link{
+    color: #777 ;
+}
+.nav-link:hover{
+    color:#CBC27D;
+    cursor: pointer;
+}
+.header-bg{
+    background-image: url('../img/home-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+}
+.header-bg::before{
+    background-color: rgba(0, 0, 0, 0.7); 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    content: '';
+    position: absolute;
+    z-index: -2;
+}
+.header-bg-p{
+    text-align: center;
+    color:#ffffff;
+    padding-top: 20%;
+    font-size: 55px;
+    font-weight: bold;
+}
+.header-bg-p2{
+    color:#CBC27D;
+    text-align: center;
+    margin-top: -23px;
+}
+button{
+    color: #777777;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 22px;
+    color: #777;
+    font-size: 11px;
+    font-weight: bold;
+    height: 40px;
+    text-transform: uppercase;
+    width: 130px;
+    position: relative;
+}
+.header-bg button{
+    margin-left: 45%;
+    margin-top: 3%;
+}
+main{
+    color: #777;
+}
+.main-card{
+    margin-top: 100px;
+    margin-left: 350px;
+    position: relative;
+}
+.blog-img{
+    width: 700px;
+}
+.card-heading{
+    color: #000000;
+    font-size: 25px;
+}
+.card-info img{
+    border-radius: 200px;
+    height: 50px;
+}
+.card-info{
+    display: flex;
+    flex-direction: row;
+}
+.card-info p{
+    margin-left: 15px;
+}
+.main-card-comments::before{
+    content: "\f075";
+}
+.card-text{
+    width: 700px; 
+}
+hr{
+    border: 1px solid rgb(222, 241, 241);
+    border-bottom-width: 0;
+    width: 700px;
+    margin-left: 26%;
+    margin-top: 45px;
+    margin-bottom: -30px;
+    
+}
+footer{
+    background-color: #000000;
+    color: #777;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    padding: 40px 0;
+}
+.epam-lab{
+    margin-left: 350px;
+    max-width: 25%;
+}
+.contacts{
+    margin-right: 270px;
+}
+.footer-heading{
+    color: #ffffff;
+}
