@@ -1,0 +1,243 @@
+/*
+ :root {
+  --bg-color--dark: #0b192f;
+  --bg-color--header: #024161;
+  --link: #fff;
+  --link--hover: #1f52a4;
+  --bg-footer-color: #024161;
+}
+ */
+body {
+  font-family: roboto;
+}
+.post-1 {
+  background: #9d27b0;
+}
+.post-2 {
+	background: #9bb800;
+}
+.post-3 {
+	background: #ed5120;
+}
+.post-4 {
+	background: #9d27b0;
+}
+.post-5 {
+	background: #2d95bb;
+}
+@media (min-width:320px){
+  body{
+    background-color: #0b192f;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  header, main, footer, section{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+  p{
+    font-weight: 300;
+  }
+  header, footer{
+    background-color: #024161;
+  }
+  header{
+    height: 50vh;
+    color:#fff;
+    text-align: center;
+  }
+  button{
+    background-color: inherit;
+    border: 0em;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  header h1{
+    text-align: center;
+    font-weight: lighter;
+  }
+  header span{
+    color:rgb(180, 48, 48);
+  }
+  nav{
+    display: none;
+  }
+  h2, h3{
+    font-weight: lighter;
+  }
+  .header-intro{
+    color: #fff;
+    line-height: 1.5em;
+    background-image: url('../img/post0.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 68vh;
+    margin: 20px 0;
+  }
+  .header-intro article{
+    margin-left: 10%;
+  }
+  .post-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .post-disc{
+    color:#fff;
+    margin-left: 10%;
+    width: 80%;
+  }
+  .post-date {
+    margin-top: -5%;
+    left: 85%;
+    position: absolute;
+  }
+  .post-date p {
+    line-height: 0.9em;
+    opacity: 0.2;
+    text-align: center;
+    font-size: 25px;
+  }
+  .post-date span {
+    font-size: 15px;
+    line-height: 1em;
+  }
+  .articles{
+    background-color: #fff;
+    color:#000;
+  }
+  .articles article{
+    padding: 10%;
+  }
+  .articles h3{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 0;
+  }
+  footer{
+    margin:2% auto;
+    color:lightslategray;
+    text-align: center;
+    line-height: 0.7em;
+    padding: 3%;
+    width: 94%;
+  }
+
+  @media (min-width:481px){
+    body {
+      margin: 0 1%;
+    }
+    main{
+      display: grid;
+      grid-template-columns: 70% 30%;
+    }
+    aside{
+      margin-left: 10%;
+    }
+    .post-date{
+      left:60%;
+    }
+    .news-content {
+      padding: 15%;
+    }
+    header span{
+      color:rgb(165, 65, 165);
+    }
+  }
+
+  @media (min-width:769px) and (max-width:1400px){
+    body {
+      margin: 0 auto;
+      width: 70%;
+    }
+    button{
+      display: none;
+    }
+    p{
+      font-size: 15px;
+    }
+    header{
+      height: 14vh;
+    }
+    header span{
+      color:rgb(161, 47, 85);
+    }
+    .header-wrap{
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      height: 14vh;
+      margin: auto 2%;
+    }
+    nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    li{
+      display: inline;
+      margin-right: 25px;
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+    a:hover{
+      cursor: pointer;
+      background-color: #1f52a4;
+    }
+    .header-intro{
+      height: 45vh;
+    }
+    .header-intro article{
+      margin-left: 5%;
+      width:65%;
+    }
+    .post-date p{
+      font-size: 35px;
+    }
+    .post-date{
+      margin-top: -1%;
+    }
+    .post-img{
+      display: flex;
+      width: 105%;
+    }
+    .post-cont{
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+    }
+    .post-cont:hover{
+      cursor: pointer;
+      background-color:#9d27b0;
+      opacity: .9;
+    }
+    .post-cont:nth-child(even){
+      text-align: right;
+      flex-direction: row-reverse;
+    }
+    .post-cont:nth-child(even) .post-date{
+      left: 15%;
+    }
+    .post-disc{
+      margin-right: 2%; 
+    }
+    .footer-wrap{
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
